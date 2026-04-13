@@ -96,16 +96,16 @@ int main() {
     int accounts = 100;
     printf("accounts: %d\n", accounts);
     time_taken = benchmark_driver(1, 10000, accounts, &ledger);
-    printf("%f\n", time_taken);
+    printf("Threads: 1 Time: %f\n", time_taken);
 
     time_taken = benchmark_driver(10, 10000, accounts, &ledger);
-    printf("%f\n", time_taken);
+    printf("Threads: 10 Time: %f\n", time_taken);
 
     time_taken = benchmark_driver(100, 10000, accounts, &ledger);
-    printf("%f\n", time_taken);
+    printf("Threads: 100 Time: %f\n", time_taken);
 
     time_taken = benchmark_driver(1000, 10000, accounts, &ledger);
-    printf("%f\n", time_taken);
+    printf("Threads: 1000 Time: %f\n", time_taken);
 
     return 0;
 }
